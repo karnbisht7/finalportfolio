@@ -1,0 +1,128 @@
+
+.resume-body{
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 4vw ;
+    box-shadow: 0 0px 10px ;
+    background-color: rgb(218, 152, 65);
+    height: auto;
+    width: 90vw;
+    display: grid;
+    grid-template-columns:30vw 60vw ;
+}
+.left-side{
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.profile-pic{
+    margin-top: 15vh;
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 30vh;
+    width: 14vw;
+}
+.profile-pic img{
+    margin: auto;
+    border-radius: 50%;
+    height: 30vh;
+    width: 14vw;
+    max-height: 100%;
+    max-width: 100%;
+}
+.color{
+    background-color: blueviolet;
+}
+.contact-me{
+    margin-top: 8vh;
+    margin-left: 5vw;
+    height: auto;
+    width: 25vw;
+    display: grid;
+    grid-template-columns: 5vw 20vw;
+    grid-template-rows: 5vh 10vh 10vh 10vh;
+    grid-row-gap: 2vh;
+}
+.contact{
+    grid-column:1/-1 ;
+    font-size: 4vh;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.all-icons{
+    padding-bottom: 2vh;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-skills{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 25vw;
+    grid-template-rows: 5vh 8vh 8vh 8vh 8vh;
+    grid-row-gap: 2vh;
+}
+.skill{
+    font-size: 3.5vh;
+}
+.progress-bar{
+    background-color: gainsboro;
+    width: 20vw;
+    border-radius: 10px;
+}
+.level1{
+    background-color: gray;
+    height: 3vh;
+    border-radius: 10px;
+    width: 15vw;
+}
+.social-media{
+    grid-template-columns: 25vw;
+    grid-template-rows: 5vh 8vh 8vh 8vh 8vh;
+    grid-row-gap: 3vh;
+
+}
+
+
+.right-side{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-name{
+    width: 50vw;
+    margin-top: 20vh;
+}
+.name{
+    font-size: 10vh;
+    font-family: 'Lobster', cursive;
+}
+.profession{
+    font-size: 4vh;
+}
+.my-experience{
+    margin-top: 8vh;
+    display: grid;
+    grid-template-columns: 20vw 30vw;
+    grid-row-gap: 4vh;
+}
+.experience{
+    grid-column: 1/-1;
+    font-size: 4vh ;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.time{
+    line-height: 4vh;
+}
+
+
+.my-reference{
+    margin-bottom: 4vh;
+}

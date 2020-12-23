@@ -1,0 +1,107 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2vw;
+    margin: 1vw 2vw ;
+    margin-top: 5vw;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.flex-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cart-father{
+    box-shadow: 0 0px 10px ;
+    background-color: rgb(218, 216, 216);
+    display: grid;
+    grid-row-gap: .5vw;
+    padding: 1vw 1vw;
+    overflow-y: scroll;
+    height: 40vw;
+}
+
+.cart-container{
+    background-color: rgb(192, 192, 192);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr ;
+    grid-column-gap: .5vw;
+    padding: 1vw;
+    height: 7vw;
+}
+.cart-container:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0px 10px white;
+
+
+}
+.cart-container img{
+    background-color: aquamarine;
+    max-width: 5vw;
+    max-height: 5vw;
+}
+
+.cart-name{
+    
+    font-size: 2vw;
+
+}
+.cart-price{ 
+    font-size: 1.5vw;
+}
+.quantity-buttons{
+    width: 9vw;
+}
+.quantity-buttons button {
+    margin: 0 .5vw;
+    height: 3vw;
+    width: 3vw;
+}
+.cart-summary{
+    background-color: white;
+    box-shadow: 0 0px 10px ;
+    display: grid;
+    grid-template-rows: 3vw 2fr 1fr;
+    grid-row-gap: 1vw;
+    height: 40vw ;
+    
+}
+.cart-summary header{
+    margin: .5vw;
+    height: 3vw;
+    font-family: 'Lobster', cursive;
+    font-size: 3vw;
+    border-bottom: 2px solid grey;
+}
+.summary-items{
+    margin: .5vw;
+    display: grid;
+    grid-row-gap: .25vw ;
+    overflow-y: scroll;
+}
+.summaryItems-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr ;
+    background-color: aqua;
+    justify-content: start;
+    font-size: .85vw;
+    height: 2vw;
+}
+
+.summaryItem-checkout{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: .5vw;
+}
+.summaryItem-checkout button{
+    height: 5vw;
+    width: 10vw;
+    font-size: 2vw;
+}
+.total-price{
+    font-family: 'Lobster', cursive;
+    font-size: 2vw;
+}

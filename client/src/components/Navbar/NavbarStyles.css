@@ -1,0 +1,28 @@
+.nav-bar{
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    background-color: rgb(18, 105, 105);
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.nav-ul{
+    height: 100%;
+}
+.nav-ul li{
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    padding-top: 1vh;
+    margin: 0 .5vw;
+    margin-right: 1.5vw;
+    height: 100%;
+    float: right;
+    list-style: none;
+}
+.nav-ul li:hover{
+    border-bottom: 3px solid white;
+}
