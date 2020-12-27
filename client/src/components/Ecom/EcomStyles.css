@@ -1,3 +1,8 @@
+.god-Ecom{
+    overflow-y: scroll;
+    height:43.5vw ;
+    margin-top: 3vw;
+}
 .shopping-cart{
     color: black;
     display: flex;

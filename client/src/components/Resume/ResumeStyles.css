@@ -1,13 +1,15 @@
-
+.resume-god{
+    margin-top: 3vw;
+    overflow-y: scroll;
+    height: 43.5vw;
+    padding:3vw;
+}
 .resume-body{
-    overflow: hidden;
+    width: 90vw;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 4vw ;
     box-shadow: 0 0px 10px ;
     background-color: rgb(218, 152, 65);
-    height: auto;
-    width: 90vw;
     display: grid;
     grid-template-columns:30vw 60vw ;
 }

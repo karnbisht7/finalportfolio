@@ -1,12 +1,8 @@
 const express = require('express')
-const mongoose = require("mongoose")
 const app = express()
+const mongoose = require("mongoose")
 const {MONGOURI} = require('./keys')
 const PORT = 5000
-const bodyParser = require('body-parser')
-
-
-require('./models/cart')
 
 
 mongoose.connect(MONGOURI , {
@@ -21,15 +17,12 @@ mongoose.connection.on('error' , ()=> {
 
 
 require('./models/user')
+require('./models/cart')
 
-app.use(bodyParser.urlencoded({
-    extended: true
-}))
-app.use(bodyParser.json())
 app.use(express.json())
 app.use(require('./routes/auth'))
 
 
 
 
-app.listen(PORT || process.env.PORT , ()=> console.log("yeah we are up and running baby !"))
+app.listen(PORT , ()=> console.log("yeah we are up and running baby !"))

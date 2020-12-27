@@ -1,0 +1,59 @@
+.Elearn-god{
+    margin-top: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap:1vw ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 2vw;
+    height: 43.5vw;
+    width: 100vw;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    padding: 2vw;
+}
+.Elearn-father{
+    margin-bottom: 2vw;
+    padding: 0;
+    height: 26vw;
+    width: 25vw;
+    border-radius: 10%;
+    transition: .5s ease;
+}
+.Elearn-father:hover{
+    box-shadow: 0 0 15px 3px aqua; 
+
+}
+.Elearn-father:hover img{
+    opacity: 1;
+    transform: scale(1.05);
+
+}
+.Elearn-father:hover .subject-details{
+    opacity:1;
+}
+
+.Elearn-mother{
+    border-radius: 10%;
+    width: 23vw;
+    height: 19vw;
+    margin: 1vw;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-row-gap:1vw ;
+    transition: .5s ease;
+}
+.subject-details{
+    margin-left:2vw ;
+    opacity: .5;
+}
+.Elearn-mother img{
+    border-radius: 10%;
+    height: 19vw;
+    width: 23vw;
+    max-height:20vw ;
+    max-width:25vw ;
+    opacity: 0.3;
+    transition: .5s ease;
+}

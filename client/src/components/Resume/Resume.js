@@ -4,10 +4,10 @@ import photo from'../assets/shisui.jpg'
 
 function Resume() {
     return (
-        <div style={{display:'flex' , alignContent:'center' , justifyContent:'center' , overflowX:'hidden'}}>
+        <div className="resume-god" >
             <div className="resume-body">
              <div className="left-side">
-                <div className="profile-pic"><img src={photo} /></div>
+                <div className="profile-pic"><img src={photo} alt="profile-pic" /></div>
                 <div className="contact-me ">
                     <div className="contact">
                         <b>CONTACT ME</b>

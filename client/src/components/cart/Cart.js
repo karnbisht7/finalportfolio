@@ -11,7 +11,7 @@ function Cart({cartItems , addToCart , removeFromCart , itemsPrice}) {
             <div className='cart-father'>
                { cartItems.length ===0 ? (<h1 className="flex-centered">CART IS EMPTY !</h1>) : (cartItems.map(product=>  (
                 <div className='cart-container' key={product.itemId}>
-                  <img src={product.item.images.icon} />
+                  <img src={product.item.images.icon} alt="product-icon" />
                   <h1 className='cart-name flex-centered'>{product.item.name}</h1>
                   <h1 className='cart-price flex-centered'>${product.store.cost}</h1>
                   <h1 className='cart-price flex-centered'>Quantity :</h1>

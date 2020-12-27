@@ -1,4 +1,4 @@
-.login-god{
+.signup-god{
     height: 43.5vw;
     margin-top: 3vw;
     display: grid;
@@ -7,9 +7,9 @@
 }
 /* filter: blur(13px); */
 
-.login-father{
-    background-image: linear-gradient(to top , #ffffff00 10%, dodgerblue 90% ), url('https://hdwallpaperim.com/wp-content/uploads/2017/08/22/85387-Naruto_Shippuuden-anime-manga-Uchiha_Madara-748x484.jpg');
-    background-size: 60vw 45vw;
+.signup-father{
+    background-image: linear-gradient(to top , #ffffff00 10%, dodgerblue 90% ), url('../assets/madara.png');
+    background-size: 50vw 45vw;
     background-repeat: no-repeat;
     overflow: hidden;
     background-color: rgb(0, 56, 56);
@@ -17,41 +17,39 @@
     border-radius: 20%;
     transition: .5s ease;
     display: grid;
-    grid-template-rows: 7vw 7vw 7vw 1fr;
+    grid-template-rows: 7vw 7vw 7vw 7vw 1fr;
     grid-row-gap:1vw;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
 }
-.login-father:hover{
+.signup-father:hover{
     box-shadow: 0 0px 10px black;
     transform: scale(1.005);
-   
+}
+.signup-mother{
+    background-image: linear-gradient(to left , #ffffff00 20%, dodgerblue 90% ), url('https://wallpapercave.com/wp/qxOuRkt.jpg');
+    background-size: 80vw 43.5vw;
     background-repeat: no-repeat;
 }
-.login-mother{
-    background-image: linear-gradient(to left , #ffffff00 20%, dodgerblue 90% ), url('https://images4.alphacoders.com/946/thumb-1920-946092.png');
-    background-size: 70vw 43.5vw;
-    background-repeat: no-repeat;
-}
-.login-father h1{
+.signup-father h1{
     margin-top: .5vw;
     padding:1vw 0 0 13.5vw ;
     font-size: 4vw;
     font-family: 'Lobster', cursive;
 
 }
-.login-email{
+.signup-email{
     margin: .5vw 1vw 0 2vw;
     padding-left: 5vw;
     display: flex;
     flex-direction: column;
 }
-.login-email label{
+.signup-email label{
     font-size: 2vw;
     transition: .2s ease;
 }
-.login-email input{
+.signup-email input{
     font-size: 1.5vw;
     padding-left: .5vw;
     margin-top: .5vw;
@@ -64,11 +62,11 @@
     color: white;
     transition: .2s ease;
 }
-.login-email input:focus{
+.signup-email input:focus{
    transform: scale(1.01);
 }
 
-.login-buttons button{
+.signup-buttons button{
     margin:1vw 0 0 12.5vw ;
     height: 3vw;
     width: 10vw;
@@ -79,17 +77,17 @@
     font-size: 1.5vw;
     color: white;
 }
-.login-buttons button:active{
+.signup-buttons button:active{
     background-color: aquamarine;
 }
-#login-link{
+#signup-link{
     text-decoration: none;
 }
-.login-buttons p{
+.signup-buttons p{
     color: white;
     margin: 1vw 0 0 8.5vw;
     font-size: 1.3vw;
 }
-.login-buttons p:hover{
+.signup-buttons p:hover{
     color: aquamarine;
 }

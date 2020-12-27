@@ -10,7 +10,8 @@ function NavBar() {
     return (
         <animated.nav className="nav-bar" style={fade}>
             <ul className="nav-ul">
-                <li><Link className="nav-link" to="/login">Login</Link></li>
+                <li><Link className="nav-link" to="/signup">Signup</Link></li>
+                <li><Link className="nav-link" to="/login">Community</Link></li>
                 <li><Link className="nav-link" to="/resume">Resume</Link></li>
                 <li><Link className="nav-link" to="/ecommerce">E Commerce</Link></li>
                 <li><Link className="nav-link" to="/elearning">E Learning</Link></li>

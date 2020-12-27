@@ -1,20 +1,27 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Login from './components/Login/Login';
 import {BrowserRouter , Route , Switch} from 'react-router-dom'
 import NavBar from './components/Navbar/NavBar';
 import Home from './components/Home';
 import About from './components/About';
 import Ecommerce from './components/Ecom/Ecommerce';
-import Elearning from './components/Elearning';
+import Elearning from './components/Elearning/Elearning';
 import Resume from './components/Resume/Resume';
 import Cart from './components/cart/Cart';
+import Signup from './components/Signup/Signup';
+import Community from './components/community/Community';
 
 
 
 
 
 const Routing = ()=> {
+
+  useEffect(()=> {
+    fetchProducts()
+  } , [])
+
 
   const [ products , setProducts ] = useState([])
   const [ cartItems , setCartItems ] = useState([])
@@ -48,62 +55,69 @@ const Routing = ()=> {
  
   const fetchProducts = () => {
     fetch('https://fortnite-api.theapinetwork.com/store/get')
-    .then((res)=> {
-      res.json()    
-    })
+    .then(res=> res.json())
     .then((data) => {
+      console.log(data)
       setProducts(data.data)
       console.log(products)
+    }).catch(err=> {
+      console.log(err)
     })
   }
 
   const PostCartdata = (product) => {
-    console.log(product)
-    fetch( '/ecommerce' , {
-      method:"POST" ,
+    fetch( "/ecommerce" , { 
+      method: "post" , 
       headers: {
-        "Content-Type" : "application/json"
+        "Content-Type":"application/json"
       } ,
-      body: JSON.stringify({
+      body:JSON.stringify({
         name : product.item.name ,
         cost : product.store.cost ,
         itemId : product.itemId ,
         image : product.item.images.icon
-      })      
+      })    
     })
-    .then(res=> {
-      var a = res.json()
-      console.log(a)
-    }).catch(err=>{
+    .then(data=>{
+      console.log(data)
+    })
+    .catch(err=> {
       console.log(err)
     })
+
+
+    
   }
 
 
   return(
     <Switch>
-      <Route path="/login" >
+       <Route exact path="/community" >
+          <Community />
+      </Route>
+      <Route exact path="/login" >
           <Login />
       </Route>
-      <Route path="/" exact >
+      <Route exact path="/signup" >
+          <Signup />
+      </Route>
+      <Route exact path="/" exact >
           <Home />
       </Route>
-      <Route path="/About" >
+      <Route exact path="/About" >
           <About />
       </Route>
-      <Route path="/ecommerce" >
+      <Route exact path="/ecommerce" >
           <Ecommerce products={products}
-                     fetchProducts={fetchProducts} 
-                     addToCart={addToCart} 
                      PostCartdata={PostCartdata} />
       </Route>
-      <Route path="/Elearning" >
+      <Route exact path="/Elearning" >
           <Elearning />
       </Route>
-      <Route path="/Resume" >
+      <Route exact path="/Resume" >
           <Resume />
       </Route>
-      <Route path="/Cart" >
+      <Route exact path="/Cart" >
           <Cart cartItems={cartItems} addToCart={addToCart} removeFromCart={removeFromCart} itemsPrice={itemsPrice} />
       </Route>
     </Switch>
